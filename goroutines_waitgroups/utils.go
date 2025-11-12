@@ -1,13 +1,13 @@
 package grw
 
 import (
-	"fmt"
-	"sync"
+//	"fmt"
+//	"sync"
 )
-func printSomething(s string, wg *sync.WaitGroup){
-	defer wg.Done()
-	fmt.Println(s)
-}
+//func printSomething(s string, wg *sync.WaitGroup){
+//	defer wg.Done()
+//	fmt.Println(s)
+//}
 func greekLetters() []string{
 	return []string{
 		"aplha",

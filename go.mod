@@ -1,3 +1,3 @@
-module github.com/rishisingh34/concurrency_with_go
+module github.com/rishisingh34/concurrency
 
 go 1.25.1

@@ -13,13 +13,18 @@ func GoroutineWaitGroup(){
 	wg.Add(len(words))
 
 	for index, word := range words {
-		go printSomething(fmt.Sprintf("%d: %s", index, word),&wg)
+		go func(){
+			defer wg.Done()
+			fmt.Printf("index: %d, word: %s", index, word)
+			fmt.Println()
+		}()
+		
 	}
 
 	wg.Wait()
 
 	
-	wg.Add(1)
+//	wg.Add(1)
 
-	printSomething("Second String", &wg)
+	fmt.Println("Second String")
 }
