@@ -28,5 +28,6 @@ func GoroutinesUsage(){
 		default:
 			fmt.Println("Wrong option")
 		}
+		fmt.Println("*************************")
 	}
 }

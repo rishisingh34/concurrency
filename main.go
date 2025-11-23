@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
-	grw "github.com/rishisingh34/concurrency/goroutines_waitgroups"
+	"github.com/rishisingh34/concurrency/mutex"
+	grw "github.com/rishisingh34/concurrency/waitgroups"
 	"os"
-
-	//	"os"
 )
 
 func main() {
@@ -18,17 +17,18 @@ func main() {
 		fmt.Println("$ Choose an option (type 0 to terminate the program): ")
 		_, _ = fmt.Scan(&option)
 
-		switch(option){
+		switch option {
 		case 0:
 			os.Exit(0)
 		case 1:
 			// 1. Go keyword, goroutines, waitgroups
 			grw.GoroutinesUsage()
 		case 2:
-			// 2.
+			// 2. Mutex, Race Condition
+			mutex.MutexUsage()
 		case 3:
 
 		}
-		break
+		fmt.Println("*************************")
 	}
 }
