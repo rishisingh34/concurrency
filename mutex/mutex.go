@@ -19,7 +19,9 @@ func MutexUsage(){
 		case 2:
 			// 2. Sync Mutex to prevent race condition
 			SyncMutex()
-
+		case 3: 
+			// complex example for mutex 
+			ComplexMutexExample()
 		}
 
 		fmt.Println("*************************")
