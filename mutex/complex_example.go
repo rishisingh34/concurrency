@@ -12,6 +12,7 @@ type Income struct {
 	Amount int
 }
 
+
 // print out starting values
 // define weekly revenue
 // loop through 52 weeks and print out how much is made; keep a running total
