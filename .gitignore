@@ -1,0 +1,4 @@
+# built binaries
+concurrency
+bin/
+*.execoncurrency
